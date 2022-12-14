@@ -24,6 +24,7 @@ sudo apt install docker-compose -y
 docker-compose build
 docker-compose run app rake db:create db:migrate db:seed
 sleep 5
+
 docker-compose up
 docker-compose exec app bundle exec rails assets:precompile
 
